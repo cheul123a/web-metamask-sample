@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="./sample.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div style="margin-bottom: 20px;">
+        <div id="connectText">Metamask not connected</div>
+        <button onClick="ethEnabled()">Connect Metamask</button>
+    </div>
+    <div style="margin-bottom: 20px;">
+        <div>ETH balance: <span id="balance"></span></div>
+    </div>
+    <div>
+        <button onClick="transferETH()">transfer 0.1ETH</button>
+        <div id="txhash"></div>
+        <div id="txStatus"></div>
+    </div>
+    
+    <div style="display: none;">
+        89b6cebc1a3a379116e76c39d7db6eeca90cb499a70ebd8fb05fb57989e5df04
+        d421a5a3c6fc54d66e8cbc441e9d1596b78fc9d24d4f8b2640567fc8984ee760
+    </div>
+</body>
+</html>
